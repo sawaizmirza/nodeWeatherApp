@@ -1,0 +1,18 @@
+<h1>Current weather data</h1>
+
+<ul>
+    {{#each data}}
+    <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
+
+<form action = "/" method = "POST">
+<label for="location">Location: </label>
+<input type="text" name="location">
+<br>
+<input type="submit" value="send">
+</form>
+
+<p>{{name}}</p>
+<p>{{wind}}</p>
+<p>{{clouds}}</p>
